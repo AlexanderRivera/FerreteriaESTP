@@ -17,7 +17,7 @@ const appMenuItem = <MenuItem>[
   MenuItem(
       title: 'INICIO',
       subtitle: 'Catalogo Inicial',
-      link: '/',
+      link: '/Home',
       icon: Icons.home),
   // MenuItem(
   //     title: 'Agregar Motos',

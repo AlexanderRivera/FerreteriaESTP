@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:motostopsv_app/controller/prueba_riverpod.dart';
 
-class RegistrerUserScreen extends StatelessWidget {
+class RegistrerUserScreen extends ConsumerWidget {
   static const String name = 'registre-scren';
   const RegistrerUserScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    String prueba = ref.watch(pruebaProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Registrar nuevo usuario'),
@@ -40,10 +43,24 @@ class RegistrerUserScreen extends StatelessWidget {
             TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.save),
-                label: const Text('Guardar'))
+                label: const Text('Guardar')),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(prueba),
+            )
           ],
         ),
       ),
     );
   }
 }
+// class RegistrerUserScreen extends ConsumerWidget {
+  
+//   const RegistrerUserScreen({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+    
+    
+//   }
+// }
