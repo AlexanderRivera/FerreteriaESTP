@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964876233360",
+    "project_id": "ferreteriaestandar",
+    "storage_bucket": "ferreteriaestandar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964876233360:android:28c0143c62b53c553e0615",
+        "android_client_info": {
+          "package_name": "com.example.motostopsv_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHsDkvpoXsyxB6HVgfnsM4CF04evtR58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
